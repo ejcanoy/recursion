@@ -54,7 +54,6 @@ function merge(nums, left, mid, right) {
         }
     }
 
-    // Handle the remaining elements in the left and right subarrays
     while (lp <= mid) {
         mergedResult.push(nums[lp]);
         lp++;
@@ -65,7 +64,6 @@ function merge(nums, left, mid, right) {
         rp++;
     }
 
-    // Copy the mergedResult back to the original nums array
     let i = 0;
     for (let k = left; k <= right; k++) {
         nums[k] = mergedResult[i];
